@@ -31,4 +31,14 @@ public class Product {
 	public String resumoDeCompra() {
 		return String.format("%s, $ %.2f, %d units, TOTAL: $ %.2f\n",name, price, quantity, TotalValueInStock());
 	}
+	
+	public String toString() {
+		return name 
+				+ ", $"
+				+ String.format("%.2f", price)
+				+ ", "
+				+ quantity
+				+ " units, Total: $"
+				+ TotalValueInStock();
+	}
 }
